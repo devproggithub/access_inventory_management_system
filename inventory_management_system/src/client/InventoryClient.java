@@ -8,13 +8,13 @@ public class InventoryClient {
 
     public static void main(String[] args) {
         try {
-            // Locate the RMI registry on the local host (127.0.0.1) and default port (1099)
+            
             Registry registry = LocateRegistry.getRegistry("127.0.0.1", 3306);
 
-            // Lookup the remote Inventory service
+           
             Inventory inventoryService = (Inventory) registry.lookup("InventoryService");
 
-            // Display all products
+           
             System.out.println("Fetching product list...");
             List<Product> products = inventoryService.getProducts();
             if (products != null && !products.isEmpty()) {
@@ -29,7 +29,7 @@ public class InventoryClient {
                 System.out.println("No products available.");
             }
 
-            // Add a new product
+          
             System.out.println("\nAdding a new product...");
             String name = "Laptop";
             String category = "Electronics";
