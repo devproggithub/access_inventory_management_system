@@ -1,22 +1,22 @@
-package dao;
+package server;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import server.Product;
+import model.Product;
 
 public class ProductDAO {
-    private static final String URL = "jdbc:mysql://localhost:3306/Tennis";  // Replace with your DB details
-    private static final String USER = "root"; // Replace with your DB username
-    private static final String PASSWORD = ""; // Replace with your DB password
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/inventory_db";  
+    private static final String USER = "root"; 
+    private static final String PASSWORD = "1234@"; 
 
-    // Method to establish a database connection
+   
     private Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
-    // Method to add a new product
+   
     public boolean addProduct(String name, String category, int quantity, double price) {
         String query = "INSERT INTO products (name, category, quantity, price) VALUES (?, ?, ?, ?)";
         
@@ -29,15 +29,15 @@ public class ProductDAO {
             preparedStatement.setDouble(4, price);
             
             int rowsAffected = preparedStatement.executeUpdate();
-            return rowsAffected > 0;  // Return true if the product was added successfully
+            return rowsAffected > 0;  
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
     }
 
-    // Method to get a list of all products
-    public List<Product> getProducts() {
+    @SuppressWarnings("exports")
+	public List<Product> getProducts() {
         String query = "SELECT * FROM products";
         List<Product> products = new ArrayList<>();
 
@@ -61,8 +61,9 @@ public class ProductDAO {
         return products;
     }
 
-    // Method to get a single product by ID
-    public Product getProductById(int id) {
+    
+    @SuppressWarnings("exports")
+	public Product getProductById(int id) {
         String query = "SELECT * FROM products WHERE id = ?";
         Product product = null;
 
@@ -86,7 +87,7 @@ public class ProductDAO {
         return product;
     }
 
-    // Method to update a product
+    
     public boolean updateProduct(int id, String name, String category, int quantity, double price) {
         String query = "UPDATE products SET name = ?, category = ?, quantity = ?, price = ? WHERE id = ?";
         
@@ -107,7 +108,7 @@ public class ProductDAO {
         }
     }
 
-    // Method to delete a product by ID
+    
     public boolean deleteProduct(int id) {
         String query = "DELETE FROM products WHERE id = ?";
 
@@ -116,15 +117,16 @@ public class ProductDAO {
             
             preparedStatement.setInt(1, id);
             int rowsAffected = preparedStatement.executeUpdate();
-            return rowsAffected > 0;  // Return true if the product was deleted successfully
+            return rowsAffected > 0; 
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
     }
 
+	@SuppressWarnings("exports")
 	public boolean deleteProduct(Product product) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 

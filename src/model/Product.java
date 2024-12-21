@@ -1,4 +1,4 @@
-package server;
+package model;
 
 import java.io.Serializable;
 
@@ -60,3 +60,4 @@ public class Product implements Serializable {
         this.price = price;
     }
 }
+

@@ -9,9 +9,9 @@ import java.sql.Statement;
 
 	public class DatabaseMysql {
 	  
-	    private static final String URL = "jdbc:MySQL://localhost:3306/inventory_db"; // Remplace par le nom de ta base de données
-	    private static final String USER = "root"; // Remplace par ton nom d'utilisateur MySQL
-	  private static final String PASSWORD = ""; // Remplace par ton mot de passe MySQL
+	    private static final String URL = "jdbc:MySQL://127.0.0.1:3306/inventory_db"; 
+	  private static final String PASSWORD = "1234@";
+	private static final String USER = "root";
 
 	    public static void main(String[] args) {
 	    	
@@ -26,23 +26,23 @@ import java.sql.Statement;
 	            connection = DriverManager.getConnection(URL,USER,PASSWORD);
 	            System.out.println("Connexion réussie à la base de données.");
 
-	            // Créer une instruction pour exécuter des requêtes
+	           
 	            statement = connection.createStatement();
 
-	            // Exécuter une requête SQL
-	            String sql = "SELECT * FROM inventory_db"; // Remplace par le nom de ta table
+	          
+	            String sql = "SELECT * FROM inventory_db"; 
 	            resultSet = statement.executeQuery(sql);
 
-	            // Traiter les résultats
+	          
 	            while (resultSet.next()) {
-	                int id = resultSet.getInt("id"); // Remplace "id" par le nom de ta colonne
-	                String name = resultSet.getString("TYPE_EPREUVE"); // Remplace "name" par le nom de ta colonne
+	                int id = resultSet.getInt("id"); 
+	                String name = resultSet.getString("TYPE_EPREUVE"); 
 	                System.out.println("ID: " + id + ", TYPE_EPREUVE: " + name);
 	            }
 	        } catch (SQLException e) {
 	            e.printStackTrace();
 	        } finally {
-	            // Fermer les ressources
+	           
 	            try {
 	                if (resultSet != null) resultSet.close();
 	                if (statement != null) statement.close();

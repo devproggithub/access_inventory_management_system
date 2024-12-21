@@ -5,6 +5,8 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.Product;
+
 public class InventoryImpl extends UnicastRemoteObject implements Inventory {
 
     
@@ -15,7 +17,8 @@ public class InventoryImpl extends UnicastRemoteObject implements Inventory {
         products = new ArrayList<>();
     }
 
-    @Override
+    @SuppressWarnings("exports")
+	@Override
     public List<Product> getProducts() throws RemoteException {
         return products;
     }
@@ -29,19 +32,20 @@ public class InventoryImpl extends UnicastRemoteObject implements Inventory {
 	@Override
 	public boolean updateProduct(int productId, String name, String category, int quantity, double price)
 			throws RemoteException {
-		// TODO Auto-generated method stub
+	
 		return false;
 	}
 
 	@Override
 	public boolean deleteProduct(int productId) throws RemoteException {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
+	@SuppressWarnings("exports")
 	@Override
 	public Product getProductById(int productId) throws RemoteException {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 }

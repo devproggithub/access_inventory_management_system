@@ -3,19 +3,20 @@ package client;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.List;
+
+import model.Product;
 import server.Inventory;
-import server.Product;
 
 public class InventoryClient {
     public static void main(String[] args) {
         try {
-            // Connect to the RMI registry on localhost
+            
             Registry registry = LocateRegistry.getRegistry("127.0.0.1");
 
-            // Lookup the remote Inventory service
+     
             Inventory inventoryService = (Inventory) registry.lookup("InventoryService");
 
-            // Fetch the list of products
+         
             System.out.println("Fetching product list...");
             List<Product> products = inventoryService.getProducts();
             if (products != null && !products.isEmpty()) {
@@ -30,7 +31,7 @@ public class InventoryClient {
                 System.out.println("No products available.");
             }
 
-            // Add a new product to the inventory
+           
             System.out.println("\nAdding a new product...");
             String name = "Laptop";
             String category = "Electronics";
