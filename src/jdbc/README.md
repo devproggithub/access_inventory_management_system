@@ -16,19 +16,22 @@ et utilise une base de données MySQL pour le stockage des données.
 ```
 access_inventory_management_system/
 ├── src/
-│   ├── client/                 # Client-side code
+│   ├── client/                 
 │   │   ├── InventoryClient.java
-│   ├── server/                 # Server-side code
+│   ├── server/                
 │   │   ├── ClientHandler.java
 │   │   ├── Server.java
-│   ├── dao/                    # Data Access Object (DAO) layer
+│   ├── dao/                   
 │   │   ├── ProductDAO.java
-│   ├── model/                  # Model classes
+│   ├── model/                 
 │   │   ├── Product.java
-│   ├── jdbc/                   # Database connection utilities
+│   ├── jdbc/                 
 │   │   ├── DatabaseConnection.java
-│   ├── README.md               # Project documentation
-└── database/                   # Database scripts
-    ├── schema.sql              # Database schema definition
-    ├── data.sql                # Sample data for testing
+│   ├── README.md             
+└── database/                   
+    ├── schema.sql            
+    ├── data.sql              
 ```
+
+## Installation
+1- Clone the repository:
