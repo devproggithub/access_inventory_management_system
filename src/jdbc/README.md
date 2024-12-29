@@ -38,3 +38,23 @@ access_inventory_management_system/
 ```
 git clone https://github.com/devproggithub/access_inventory_management_system.git
 ```
+2- Mettre en place la base de données :
+ - Créer une base de données MySQL nommée inventorydb.
+ - Exécutez le script database/schema.sql pour créer le schéma de base de données.
+ - Éventuellement, remplissez la base de données avec des données d’exemple en utilisant database/data.sql.
+ - 
+3- Update DatabaseConnection.java:
+Modifier l’URL de la base de données, le nom d’utilisateur et le mot de passe pour correspondre à votre configuration MySQL.
+
+## Technologies utilisées
+- Java : langage de programmation.
+- MySQL : Système de gestion des bases de données.
+- Programmation des sockets : communication client-serveur.
+- JDBC : Connectivité de base de données Java pour les opérations sur bases de données.
+
+
+
+
+
+
+
