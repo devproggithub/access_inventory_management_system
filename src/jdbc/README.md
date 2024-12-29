@@ -35,3 +35,6 @@ access_inventory_management_system/
 
 ## Installation
 1- Clone the repository:
+```
+git clone https://github.com/devproggithub/access_inventory_management_system.git
+```
