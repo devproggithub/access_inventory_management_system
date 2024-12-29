@@ -56,6 +56,11 @@ Modifier l’URL de la base de données, le nom d’utilisateur et le mot de pas
 - MySQL : Système de gestion des bases de données.
 - Programmation des sockets : communication client-serveur.
 - JDBC : Connectivité de base de données Java pour les opérations sur bases de données.
+  
+## Collaboration/Communication
+
+- Team member
+- Yassine Taleb yassinena9597@gmail.com
 
 
 
