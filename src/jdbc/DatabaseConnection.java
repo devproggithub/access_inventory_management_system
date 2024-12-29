@@ -6,29 +6,35 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
-    public static void main(String[] args) {
-        String url = "jdbc:mysql://127.0.0.1:3306/inventorydb";
-        String username = "root"; // Replace with your MySQL username
-        String password = ""; // Replace with your MySQL password
+    private static final String URL = "jdbc:mysql://localhost:3306/inventorydb";
+    private static final String USER = "root";
+    private static final String PASSWORD = "1234@";
 
+
+    static {
         try {
-            // Optional: Load the MySQL driver
             Class.forName("com.mysql.cj.jdbc.Driver");
-
-            // Establish connection
-            Connection connection = DriverManager.getConnection(url, username, password);
-            System.out.println("Connected to the database successfully!");
-
-            // Close connection
-            connection.close();
         } catch (ClassNotFoundException e) {
-            System.err.println("MySQL JDBC Driver not found: " + e.getMessage());
-        } catch (SQLException e) {
-            System.err.println("Connection failed: " + e.getMessage());
+            System.err.println("Failed to load JDBC driver.");
+            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 
-    public static Connection getConnection() {
-        return null;
+
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
+    }
+
+
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                System.err.println("Failed to close database connection.");
+                e.printStackTrace();
+            }
+        }
     }
 }

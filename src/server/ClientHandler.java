@@ -28,14 +28,7 @@ public class ClientHandler implements Runnable {
 
                     switch (command) {
                         case "ADD":
-                            try {
-                                Product newProduct = (Product) input.readObject();
-                                boolean success = productDAO.addProduct(newProduct);
-                                output.writeObject(success ? "Product added successfully." : "Failed to add product.");
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                                output.writeObject("Error processing ADD command: " + e.getMessage());
-                            }
+                            handleAdd(input, output);
                             break;
 
                         case "UPDATE":
@@ -84,13 +77,13 @@ public class ClientHandler implements Runnable {
     private void handleUpdate(ObjectInputStream input, ObjectOutputStream output) throws IOException, ClassNotFoundException, SQLException {
         Product product = (Product) input.readObject();
         boolean success = productDAO.updateProduct(product);
-        output.writeObject(success ? "Produit mis à jour avec succès." : "Échec de la mise à jour du produit.");
+        output.writeObject(success ? "Product successfully updated." : "Product update failed.");
     }
 
     private void handleDelete(ObjectInputStream input, ObjectOutputStream output) throws IOException, ClassNotFoundException, SQLException {
         int productId = (Integer) input.readObject();
         boolean success = productDAO.deleteProduct(productId);
-        output.writeObject(success ? "Produit supprimé avec succès." : "Échec de la suppression du produit.");
+        output.writeObject(success ? "Product successfully removed." : "Product deletion failed.");
     }
 
     private void handleSearchByName(ObjectInputStream input, ObjectOutputStream output) throws IOException, ClassNotFoundException, SQLException {
