@@ -62,7 +62,9 @@ Modifier l’URL de la base de données, le nom d’utilisateur et le mot de pas
 ### Team member
 - Yassine Taleb yassinena9597@gmail.com
 - Amine Boutouil
+## Screenshots
 
+<img src="1.jpg" alt="Screenshot" style="padding:15px; width:40%; height:40%"/>
 
 
 
