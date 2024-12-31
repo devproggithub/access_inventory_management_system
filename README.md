@@ -64,7 +64,7 @@ Modifier l’URL de la base de données, le nom d’utilisateur et le mot de pas
 - Amine Boutouil
 ## Screenshots
 
-<img src="1.jpg" alt="Screenshot" style="padding:15px; width:40%; height:40%"/>
+<img src="1.png" alt="Screenshot" style="padding:15px; width:40%; height:40%"/>
 
 
 
