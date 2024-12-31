@@ -76,6 +76,10 @@ Modifier l’URL de la base de données, le nom d’utilisateur et le mot de pas
 <img src="Images/4.png" alt="Screenshot" style="width:40%; height:40%"/>
 <img src="Images/5.png" alt="Screenshot" style="width:40%; height:40%"/>
 
+3- Suprimer un produit
+
+<img src="Images/6.png" alt="Screenshot" style="width:40%; height:40%"/>
+<img src="Images/7.png" alt="Screenshot" style="width:40%; height:40%"/>
 
 
 
