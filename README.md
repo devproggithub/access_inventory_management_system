@@ -67,6 +67,7 @@ Modifier l’URL de la base de données, le nom d’utilisateur et le mot de pas
 <img src="Images/1.png" alt="Screenshot" style="width:40%; height:40%"/>
 
 1- Ajouter un produit
+
 <img src="Images/2.png" alt="Screenshot" style="width:40%; height:40%"/>
 <img src="Images/3.png" alt="Screenshot" style="width:40%; height:40%"/>
 
