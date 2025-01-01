@@ -1,0 +1,36 @@
+ ### INVENTORY MANAGEMENT SYSTEM PROJECT DOCUMENTATION
+## INTRODUCTION Contexte du projet:
+ Dans la génération d’aujourd’hui, nous sommes engagés dans une technologie hautement informatisée visant à rendre les modes de vie individuels plus confortables et plus faciles, en particulier dans les affaires.
+Le système manuel est maintenant considéré comme le premier processus après la naissance du système informatisé. 
+Les transactions en ligne sont maintenant très courantes afin d’élargir le marché cible de l’entreprise.
+Il devient plus efficace pour le client, car il peut gagner du temps et est considéré comme étant sans tracas.
+Le système le plus couramment utilisé par plusieurs entreprises est le système de vente et de stock créant un système basé sur le web.
+Système avancé de vente permet un enregistrement plus fiable des ventes de l’entreprise avec comparaison à son coût réel. 
+En plus des données nécessaires à l’entreprise pour décider des questions relatives aux stocks, il est possible de générer facilement des informations.
+De plus, le contrôle des stocks qui assure le stockage des articles en demande et corrects dans les quantités correctes.
+
+Ce système de vente et d’inventaire peut aider l’entreprise à éviter le surstockage.
+Lorsque la société a un excédent de stocks, le fonds ne va pas revenir facilement parce que le cycle des actions est un arrêt pour les éléments inutiles requis en temps, espace et fonds qui auraient pu être utilisés sur des actifs plus critiques.  
+L’ordinateur est une technologie utile dans notre société qui rend notre travail facile à conclure. De nos jours, la technologie informatique continue d’évoluer et de se développer rapidement. 
+Ensuite, toutes les entreprises de notre société ont commencé à passer d’un système manuel à un système automatisé qui rend notre travail plus facile et plus rapide.
+
+Point de vente et système d’inventaire est un ordinateur est un moyen facile de vérifier et de liste des ventes de l’entreprise, il est plus rapide et plus fiable que de le faire manuellement. 
+Le système peut minimiser les erreurs humaines dans l’édition et être facilement accessible à tout moment par la société.
+Le système de vente et d’inventaire rend l’entreprise plus efficace, plus productive et pratique pour l’entreprise et ses clients. 
+Le système est en train d’aider l’établissement à montrer des articles plus pertinents aux clients. 
+
+## But et description 
+Le système de point de vente et d’inventaire a pour but de servir les clients efficacement. 
+Cette étude vise à aider le personnel / employés de TH Garment Center faire leur travail plus rapide en utilisant le système où ils peuvent surveiller les produits restants dans les dossiers où ils peuvent voir dans la base de données. 
+Le système fournira un bon service à l’entreprise comme un meilleur processus de transaction qui apporte plus de profit.  
+
+## Objectif général 
+L’objectif principal de cette recherche est d’améliorer le système manuel des vêtements TH en vérifiant et en ajoutant les stocks du fournisseur.
+Le nouveau système peut résoudre le problème de la gestion des dossiers pour faciliter le suivi et le suivi et aider les travailleurs à avoir un moyen plus rapide d’enregistrer les détails de chaque transaction.
+
+## Objectifs spécifiques
+- Élaborer un module qui génère des rapports mensuels sur les ventes et l’inventaire.
+- Développer la sécurité en termes de tenue des registres de l’inventaire.
+Développer un système qui permet de surveiller les stocks entrants et sortants ainsi que l’inventaire de manière rapide et efficace
+- Enregistrer, calculer et produire un rapport de ventes avec précision. 
+
